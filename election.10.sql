@@ -26,6 +26,6 @@ WHERE
         FROM `constituencywise_details` cd1
         WHERE cd1.`Constituency ID` = cd.`Constituency ID`
     )
-
-
+ORDER BY cd.`EVM Votes` DESC
+LIMIT 10;
 
